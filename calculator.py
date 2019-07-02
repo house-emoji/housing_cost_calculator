@@ -18,9 +18,13 @@ total_cost = 4900
 
 # The square footage of each person's bedroom. "Thiele" is Alex and Bethany's
 # cute couple name.
-burgle_sqft = 286.2
-unused_sqft = 114.7
-max_sqft = 106.9
+_master_bed_bath = 286.2
+_master_bedroom = 177.67
+_master_bathroom = _master_bed_bath - _master_bedroom
+unused_sqft = _master_bedroom
+burgle_sqft = 114.7 + _master_bathroom
+_hall_bathroom = 36.56
+max_sqft = 106.9 + _hall_bathroom
 tyler_sqft = 170.5
 
 # The square foot of the common area, which is any area that is not a person's
