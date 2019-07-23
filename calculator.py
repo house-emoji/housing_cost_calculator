@@ -11,21 +11,31 @@ flatmate_count = 4
 # The total square feet of the house. Note that this is the number reported in
 # the house's listing. We're assuming that it does not include outside areas
 # like the patio and balcony, but we haven't confirmed that.
-total_sqft = 1882
+total_sqft = 1675
 
 # The total cost of rent for the house per month
-total_cost = 4900
+total_cost = 4345
 
-# The square footage of each person's bedroom. "Thiele" is Alex and Bethany's
+# The square footage of each person's bedroom. "Burgle" is Kylee and Bryce's
 # cute couple name.
-_master_bed_bath = 286.2
-_master_bedroom = 177.67
-_master_bathroom = _master_bed_bath - _master_bedroom
-unused_sqft = _master_bedroom
-burgle_sqft = 114.7 + _master_bathroom
-_hall_bathroom = 36.56
-max_sqft = 106.9 + _hall_bathroom
-tyler_sqft = 170.5
+living_room = 281.56
+dining_room = 132.17
+
+master_bedroom = 155.83
+master_closet = 0
+master_bathroom = 0
+
+max_bedroom = 108.17
+max_closet = 0
+max_bathroom = 0
+
+tyler_bedroom = 103.25
+tyler_closet = 0
+tyler_bathroom = 0
+
+burgle_sqft = master_bedroom + master_bathroom + master_closet
+max_sqft = max_bedroom + max_bathroom + max_closet
+tyler_sqft = tyler_bedroom + tyler_bathroom + tyler_closet
 
 # The square foot of the common area, which is any area that is not a person's
 # bedroom.
