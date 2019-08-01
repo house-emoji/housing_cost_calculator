@@ -14,7 +14,7 @@ flatmate_count = 4
 total_sqft = 1882
 
 # The total cost of rent for the house per month
-total_cost = 4900
+total_cost = 3430
 
 # The square footage of each person's bedroom. "Thiele" is Alex and Bethany's
 # cute couple name.
@@ -49,9 +49,9 @@ kylee_cost = (common_cost / flatmate_count) + (burgle_room_cost / 2)
 max_cost = (common_cost / flatmate_count) + max_room_cost
 tyler_cost = (common_cost / flatmate_count) + tyler_room_cost
 
-print("Bryce:", bryce_cost)
-print("Kylee:", kylee_cost)
-print("Max:", max_cost)
-print("Tyler:", tyler_cost)
+print(f"Bryce: {bryce_cost:.2f}")
+print(f"Kylee: {kylee_cost:.2f}")
+print(f"Max: {max_cost:.2f}")
+print(f"Tyler: {tyler_cost:.2f}")
 
 print("\nSum:", bryce_cost + kylee_cost + max_cost + tyler_cost)
