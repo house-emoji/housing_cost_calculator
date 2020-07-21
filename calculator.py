@@ -14,7 +14,7 @@ flatmate_count = 4
 total_sqft = 1675
 
 # The total cost of rent for the house per month
-total_cost = 4345
+total_cost = 4128
 
 # The square footage of each person's bedroom. "Burgle" is Kylee and Bryce's
 # cute couple name.
